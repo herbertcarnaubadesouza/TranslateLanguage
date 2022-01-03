@@ -25,8 +25,8 @@ i18next
       caches: ['cookie'],
     },
     // react: { useSuspense: false },
-    backend: {
-      loadPath: '/assets/locales/{{lng}}/translation.json',
+    backend: {      
+      loadPath: './assets/local/{{lng}}/translation.json',
     },
   })
 

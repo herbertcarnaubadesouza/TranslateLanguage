@@ -71,13 +71,13 @@ export default function App() {
               </li>
               {languages.map(({ code, name, country_code }) => (
                 <li key={country_code}>
-                  <a
-                    href="#"
+                  <button                    
                     className={classNames('dropdown-item', {
                       disabled: currentLanguageCode === code,
                     })}
                     onClick={() => {
                       i18next.changeLanguage(code)
+                      console.log(code)
                     }}
                   >
                     <span
@@ -87,7 +87,7 @@ export default function App() {
                       }}
                     ></span>
                     {name}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
